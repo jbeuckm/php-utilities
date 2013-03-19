@@ -35,10 +35,10 @@ class RegEx
         return static::$instance;
     }
 
-	public function replace( $input, $replacement, $maxReplacements = -1 )
-	{
+    public function replace( $input, $replacement, $maxReplacements = -1 )
+    {
         return preg_replace( static::$compiliedPattern, $replacement, $input, $maxReplacements );
-	}
+    }
 
     /**
      * @param string $input
