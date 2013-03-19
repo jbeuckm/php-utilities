@@ -3,10 +3,9 @@
 class ArrayHelper
 {
 	/**
-	 * Extracts values from the source array according to the specified
-	 * keys and returns a new array with matching keys.
-	 * Optionally the returned arra keys can be remapped by the newKeys argument.
-	 * If a key is missing from source the returned array will contain the key with an empty string value.
+	 * Extracts values from the source array according to the specified keys and returns a new array with matching keys.
+	 * If a key is missing from source the returned array will contain an empty string value at that key.	 
+	 * Optionally the returned array keys can be remapped by the $newKeys argument.
 	 *
 	 * @param $source array The array to extract values from
 	 * @param $keys array The keys used to extract from $source
