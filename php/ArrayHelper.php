@@ -2,9 +2,9 @@
 
 class ArrayHelper
 {
-    /**
-     * @return array
-    */
+	/**
+	 * @return array
+	*/
 	public static function map( array $source, $keys, $newKeys = null )
 	{
 		$return = array();
