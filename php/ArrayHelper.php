@@ -6,11 +6,14 @@ class ArrayHelper
 	 * Extracts values from the source array according to the specified
 	 * keys and returns a new array with matching keys.
 	 * Optionally the returned arra keys can be remapped by the newKeys argument.
-     * If a key is missing from source the returned array will contain the key with an empty string value.
-     * 
-	 * @return array
+	 * If a key is missing from source the returned array will contain the key with an empty string value.
+	 *
+	 * @param $source array The array to extract values from
+	 * @param $keys array The keys used to extract from $source
+	 * @param $newKeys array Used to rename keys from $source to $return
+	 * @return array The result of the mapping
 	*/
-	public static function map( array $source, $keys, $newKeys = null )
+	public static function map( array $source, array $keys, array $newKeys = null )
 	{
 		$r = array();
 		$i = 0;
